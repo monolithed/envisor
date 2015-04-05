@@ -8,7 +8,7 @@
 > Universal library for managing your environment variables
 
 
-*Environment variables are a set of dynamic named values that can affect the way running processes will behave on a computer. 
+*Environment variables are a set of dynamic named values that can affect the way running processes will behave on a computer. <br />
 They are part of the environment in which a process runs*
 
 
@@ -78,7 +78,7 @@ process.env.foo_bar; // 1
 
 #### .remove
 
-*Removes the value for the specified `key`*
+*Removes an environment variable*
 
 ```js
 var env = require('envisor');
@@ -90,7 +90,7 @@ env.get('foo'); // ''
 
 #### .all
 
-*Returns a list of environment variables with values*
+*Returns all environment variables*
 
 ```js
 var env = require('envisor');
@@ -107,7 +107,7 @@ npm test
 
 
 ### Links
-[Environment variables](http://en.wikipedia.org/wiki/Environment_variable)
+[Environment variables](http://en.wikipedia.org/wiki/Environment_variable) <br />
 [process.env](https://nodejs.org/api/process.html#process_process_env)
 
 

@@ -95,7 +95,7 @@ module.exports = Object.defineProperties({}, {
 	},
 
 	/**
-	 * Returns a list of environment variables with values
+	 * Returns all environment variables
 	 *
 	 * @returns {Object}
 	 */
