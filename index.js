@@ -39,7 +39,7 @@ module.exports = Object.defineProperties({}, {
 	 * Retrieves the value for the specified key
 	 *
 	 * @param {string} key
-	 * @param {*}
+	 * @returns {*}
 	 */
 	get: {
 		value: function (key) {
