@@ -67,7 +67,7 @@ module.exports = Object.defineProperties({}, {
 	} ,
 
 	/**
-	 * Checks the key in environment variables
+	 * Checks an environment variable
 	 *
 	 * @param {string} key
 	 * @returns {boolean}
@@ -81,6 +81,7 @@ module.exports = Object.defineProperties({}, {
 	/**
 	 * Returns used namespace with the key
 	 *
+	 * @private
 	 * @param {string} key
 	 * @param {string}
 	 */

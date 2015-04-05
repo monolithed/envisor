@@ -52,7 +52,7 @@ env.get('bar').a; // 2
 
 #### .has
 
-*Checks your key in the environment variables*
+*Checks an environment variable*
 
 ```js
 var env = require('envisor');
