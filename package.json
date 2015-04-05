@@ -6,7 +6,7 @@
 
 	"description": "Universal library for managing your environment variables",
 
-	"keywords": [ "envisor", "env", "config", "export", "environment" ],
+	"keywords": [ "env", "config", "export", "environment", "variables", "management" ],
 
 	"man": "README.md",
 
