@@ -1,0 +1,40 @@
+{
+	"name"   : "envisor",
+	"version": "1.0.1",
+	"author" : "Abashkin Alexander <monolithed@gmail.com>",
+	"homepage": "https://github.com/monolithed/envisor.git",
+
+	"description": "Universal library for managing your environment variables",
+
+	"keywords": [ "envisor", "env", "config", "export", "environment" ],
+
+	"man": "README.md",
+
+	"engines": {
+		"node": ">=0.10.28"
+	},
+
+	"repository": {
+		"type": "git",
+		"url" :  "https://github.com/monolithed/envisor.git"
+	},
+
+	"bugs": {
+		"url": "https://github.com/monolithed/envisor/issues"
+	},
+
+	"scripts": {
+		"test": "nodeunit tests/index.js"
+	},
+
+	"devDependencies": {
+		"nodeunit": "^0.9.1"
+	},
+
+	"licenses": [
+		{
+			"type": "MIT",
+			"url" : "http://www.opensource.org/licenses/mit-license.php"
+		}
+	]
+}
