@@ -24,6 +24,7 @@ npm install envisor --save-dev
 
 
 ## Usage
+
 *For example you could use the following code:*
 
 ```js
@@ -36,19 +37,37 @@ env.get('foo'); // 1
 
 ### API
 
-#### .get / .set
+#### .set
 
 *Sets/retrieves an environment variable*
+
+*Primitive values*
 
 ```js
 var env = require('envisor');
 
 env.set('foo', 1);
-env.set('bar', { a: 2 });
-
 env.get('foo'); // 1
-env.get('bar').a; // 2
 ```
+
+*Object values*
+
+```js
+var env = require('envisor');
+
+env.set('foo', { bar: 1});
+env.get('foo).bar; // 1
+```
+
+*Object key/values*
+
+```js
+var env = require('envisor');
+
+env.set({ foo: 1 });
+env.get('foo'); // 1
+```
+
 
 #### .has
 

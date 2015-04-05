@@ -11,13 +11,26 @@ module.exports = Object.defineProperties({}, {
 	/**
 	 * Sets the `value` for the specified `key`.
 	 *
-	 * @param {string} key
+	 * @param {string|Object} key
 	 * @param {*} value
 	 */
 	set: {
 		value: function (key, value) {
 			if (key) {
-				process.env[this.key(key)] = JSON.stringify(value) || '';
+				var set = function (key, value) {
+					process.env[this.key(key)] = JSON.stringify(value) || '';
+				};
+
+				if (key instanceof Object) {
+					for (var name in key) {
+						if (Object.prototype.hasOwnProperty.call(key, name)) {
+							set.call(this, name, key[name]);
+						}
+					}
+				}
+				else {
+					set.call(this, key, value);
+				}
 			}
 		}
 	},

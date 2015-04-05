@@ -46,6 +46,11 @@ exports.tests = {
 		test.equal(envisor.get(key).foo, 1,
 			'get object value');
 
+		envisor.set({bar: { baz: 1 }});
+
+		test.equal(envisor.get('bar').baz, 1,
+			'get a set of values');
+
 		envisor.remove(key);
 		envisor.use();
 
