@@ -56,7 +56,7 @@ env.get('foo'); // 1
 var env = require('envisor');
 
 env.set('foo', { bar: 1});
-env.get('foo).bar; // 1
+env.get('foo').bar; // 1
 ```
 
 *Object key/values*
